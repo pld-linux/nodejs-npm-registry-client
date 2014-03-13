@@ -2,7 +2,7 @@
 Summary:	Client for the npm registry
 Name:		nodejs-%{pkg}
 Version:	0.4.4
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/npm-registry-client
@@ -18,7 +18,7 @@ Requires:	nodejs-mkdirp < 0.4.0
 Requires:	nodejs-mkdirp >= 0.3.3
 Requires:	nodejs-request < 3
 Requires:	nodejs-request >= 2.25.0
-Requires:	nodejs-retry = 0.0.6
+Requires:	nodejs-retry = 0.6.0
 Requires:	nodejs-rimraf < 3
 Requires:	nodejs-rimraf >= 2
 Requires:	nodejs-semver < 3.0.0
@@ -45,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.md LICENSE
+%doc README.md
 %{nodejs_libdir}/%{pkg}
