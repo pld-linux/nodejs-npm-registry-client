@@ -1,14 +1,14 @@
 %define		pkg	npm-registry-client
 Summary:	Client for the npm registry
 Name:		nodejs-%{pkg}
-Version:	0.4.4
-Release:	2
+Version:	0.4.5
+Release:	1
 License:	BSD
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/npm-registry-client
 # download from https://github.com/isaacs/%{pkg}/tarball/%%{version}
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	36acb8549bbceb4a84fa9d81c1aa39b6
+# Source0-md5:	1f286996530c85f83243d21b2470d9ec
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-chownr < 1
