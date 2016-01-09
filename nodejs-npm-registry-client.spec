@@ -1,12 +1,12 @@
 %define		pkg	npm-registry-client
 Summary:	Client for the npm registry
 Name:		nodejs-%{pkg}
-Version:	2.0.2
+Version:	2.0.3
 Release:	1
 License:	BSD
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	da3dd8b61c9e38c9af784ad549b33623
+# Source0-md5:	d0f7705508baacbda8d88ce640d3fec2
 URL:		https://github.com/isaacs/npm-registry-client
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
