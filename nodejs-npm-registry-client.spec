@@ -1,18 +1,18 @@
 %define		pkg	npm-registry-client
 Summary:	Client for the npm registry
 Name:		nodejs-%{pkg}
-Version:	1.0.1
+Version:	2.0.2
 Release:	1
 License:	BSD
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	3a91e1862e77b3b4f7923a57e8155319
+# Source0-md5:	da3dd8b61c9e38c9af784ad549b33623
 URL:		https://github.com/isaacs/npm-registry-client
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-chownr < 1
-Requires:	nodejs-graceful-fs < 2.1.0
-Requires:	nodejs-graceful-fs >= 2.0.0
+Requires:	nodejs-graceful-fs < 4
+Requires:	nodejs-graceful-fs >= 3.0.0
 Requires:	nodejs-mkdirp < 0.4.0
 Requires:	nodejs-mkdirp >= 0.3.3
 Requires:	nodejs-npm-cache-filename < 2.0.0
